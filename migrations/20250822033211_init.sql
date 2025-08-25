@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS users (
+    created DECIMAL DEFAULT EXTRACT(EPOCH FROM NOW()),
+    name TEXT,
+    identifier TEXT PRIMARY KEY,
+    balance DECIMAL DEFAULT 0
+);
